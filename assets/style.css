@@ -235,3 +235,26 @@ section { padding: 64px 0; }
 .tile.accent .btn { background: var(--on-accent); color: var(--accent); align-self: flex-start; margin-top: 24px; }
 .honest { max-width: 760px; margin: 28px auto 0; text-align: center; font-size: 15px; color: var(--muted); }
 @media (max-width: 719px) { .tile { min-height: 0; } .tile.dark .cipher { margin-top: 26px; } }
+
+/* ---- v3: four screens, picture tiles ---- */
+.hero.mid .wrap { display: block; text-align: center; }
+.hero.mid .copy { padding-bottom: 0; }
+.hero.mid h1 { font-size: clamp(40px, 10.5vw, 88px); }
+.hero.mid .lead { max-width: 560px; margin-left: auto; margin-right: auto; }
+.hero.mid .cta { justify-content: center; }
+.hero.mid .phone { margin: 56px auto 0; max-width: 320px; }
+.tile.ctr { align-items: center; justify-content: center; text-align: center; gap: 18px; }
+.tile .pic { width: 150px; height: 150px; }
+.tile .pic.qr { width: 132px; height: 132px; margin: 9px; }
+.tile.dark .eyebrow { margin-bottom: 14px; }
+@media (min-width: 720px) { .tile { min-height: 300px; } .tile .mock .row { padding: 15px 0; font-size: 16px; } }
+.ind { min-height: 170px; align-items: flex-start; }
+.ind svg { width: 44px; height: 44px; }
+.ind h3 { font-size: 19px; }
+.tile.accent.wide { margin-top: 16px; min-height: 0; padding: 32px 26px; gap: 22px; }
+.tile.accent.wide .btn { margin-top: 0; }
+@media (min-width: 720px) { .tile.accent.wide { flex-direction: row; align-items: center; justify-content: space-between; padding: 44px 48px; } }
+.price .amount { margin-bottom: 0; }
+p.center { text-align: center; }
+.contact h2 { margin-bottom: 6px; }
+.band .tile:not(.dark):not(.accent) { background: var(--bg); }
