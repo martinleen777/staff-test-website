@@ -309,3 +309,4 @@ a.tile:hover { text-decoration: none; }
 .price .amount small { display: block; margin-top: 6px; }
 .price .amount.text { font-size: 28px; letter-spacing: -0.03em; line-height: 1.15; }
 .example { margin-top: 22px; font-weight: 600; }
+.example { text-wrap: balance; }
