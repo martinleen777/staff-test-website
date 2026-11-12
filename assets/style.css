@@ -304,3 +304,8 @@ a.tile:hover { text-decoration: none; }
   .hero.mid .cta { justify-content: flex-start; }
   .hero.mid .phone { margin: 0 auto; max-width: 340px; }
 }
+
+/* Prices: four cards, example line */
+.price .amount small { display: block; margin-top: 6px; }
+.price .amount.text { font-size: 28px; letter-spacing: -0.03em; line-height: 1.15; }
+.example { margin-top: 22px; font-weight: 600; }
