@@ -294,3 +294,13 @@ a.tile:hover { text-decoration: none; }
 .fb.good b { color: var(--ok); } .fb.bad b { color: var(--bad); }
 .fb p { margin-top: 6px; }
 .fb .src { font-size: 14px; color: var(--muted); }
+
+/* Hero on desktop: text left, phone right (owner's decision 12.11.2026). Phones keep the centred layout. */
+@media (min-width: 860px) {
+  .hero.mid .wrap { display: grid; grid-template-columns: 1.35fr 0.65fr; gap: 56px; align-items: end; text-align: left; }
+  .hero.mid .copy { padding-bottom: 96px; align-self: center; }
+  .hero.mid h1 { font-size: clamp(48px, 5.4vw, 68px); margin-left: 0; margin-right: 0; }
+  .hero.mid .lead { margin-left: 0; margin-right: 0; }
+  .hero.mid .cta { justify-content: flex-start; }
+  .hero.mid .phone { margin: 0 auto; max-width: 340px; }
+}
