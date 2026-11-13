@@ -330,3 +330,6 @@ footer nav { flex-wrap: wrap; }
 /* Very narrow phones: industry tiles in one column */
 .ind { min-width: 0; }
 @media (max-width: 350px) { .inds { grid-template-columns: 1fr; } }
+
+/* Logo: "Regel" in text colour, "fit" in the accent colour (owner's choice, 13.11.2026) */
+.brand .fit { color: var(--accent); }
