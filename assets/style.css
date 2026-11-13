@@ -333,3 +333,7 @@ footer nav { flex-wrap: wrap; }
 
 /* Logo: "Regel" in text colour, "fit" in the accent colour (owner's choice, 13.11.2026) */
 .brand .fit { color: var(--accent); }
+
+/* Longer consent text: keep the banner usable on small screens */
+.consent { max-height: calc(100vh - 24px); overflow-y: auto; font-size: 14px; }
+.consent p + p { margin-top: 8px; }

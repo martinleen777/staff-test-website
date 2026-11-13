@@ -29,9 +29,13 @@
     if (document.getElementById('consent')) return;
     var box = el('div', 'consent'); box.id = 'consent'; box.setAttribute('role', 'dialog'); box.setAttribute('aria-label', 'Cookie-Einstellungen');
     box.appendChild(el('b', null, 'Dürfen wir mitzählen?'));
-    var p = el('p', null, 'Mit Ihrer Einwilligung nutzen wir Google Analytics, um zu sehen, wie diese Website besucht wird. Dabei werden Cookies gesetzt und Daten an Google übermittelt. Die Tests und die Daten Ihrer Mitarbeiter sind davon nicht betroffen. ');
-    var a = el('a', null, 'Datenschutzerklärung'); a.href = 'datenschutz.html'; p.appendChild(a);
+    var p = el('p', null, 'Mit Ihrer Einwilligung nutzen wir den Google Tag Manager und Google Analytics (Google Ireland Limited), um zu sehen, wie diese Website besucht wird. Dabei werden Cookies gesetzt und Daten wie Ihre IP-Adresse, Geräteangaben und aufgerufene Seiten an Google übermittelt und auch in den USA verarbeitet. Google kann die Daten auch für eigene Zwecke nutzen.');
     box.appendChild(p);
+    var p2 = el('p', null, 'Die Einwilligung ist freiwillig. Sie können sie jederzeit über „Cookie-Einstellungen“ am Seitenende widerrufen. Die Tests und die Daten Ihrer Mitarbeiter sind nicht betroffen. ');
+    var a = el('a', null, 'Datenschutzerklärung'); a.href = 'datenschutz.html'; p2.appendChild(a);
+    p2.appendChild(document.createTextNode(' · '));
+    var a2 = el('a', null, 'Impressum'); a2.href = 'impressum.html'; p2.appendChild(a2);
+    box.appendChild(p2);
     var row = el('div', 'consent-row');
     var no = el('button', 'btn', 'Ablehnen'); no.type = 'button';
     var yes = el('button', 'btn', 'Akzeptieren'); yes.type = 'button';
