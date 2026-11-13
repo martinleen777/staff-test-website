@@ -1,6 +1,6 @@
-# Staff Test – Website
+# Regelfit – Website
 
-Werbe-Website für den Dienst „Staff Test“ (Arbeitstitel). Statische Seiten für GitHub Pages, ohne Build.
+Werbe-Website für den Dienst „Regelfit“ (https://regelfit.de). Statische Seiten für GitHub Pages, ohne Build.
 
 - `index.html` – Startseite
 - `impressum.html`, `datenschutz.html` – rechtliche Seiten (Entwürfe, nicht anwaltlich geprüft)
