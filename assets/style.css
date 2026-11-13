@@ -321,3 +321,12 @@ a.tile:hover { text-decoration: none; }
 footer nav { flex-wrap: wrap; }
 /* Consent banner centred (owner's preference, 13.11.2026) */
 .consent { margin-left: auto; margin-right: auto; max-width: 520px; }
+
+/* Header: customer login link next to the demo button */
+.top-actions { display: flex; align-items: center; gap: 14px; }
+.top .login { font-size: 14px; font-weight: 600; color: var(--text); white-space: nowrap; }
+.top .login:hover { color: var(--accent); text-decoration: none; }
+@media (max-width: 370px) { .top .wrap { gap: 8px; padding: 0 12px; } .top-actions { gap: 10px; } .top .btn.small { padding: 7px 11px; font-size: 13px; } .top .login { font-size: 13px; } .brand { font-size: 16px; gap: 6px; } }
+/* Very narrow phones: industry tiles in one column */
+.ind { min-width: 0; }
+@media (max-width: 350px) { .inds { grid-template-columns: 1fr; } }
