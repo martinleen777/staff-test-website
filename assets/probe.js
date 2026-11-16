@@ -54,7 +54,7 @@
     root.textContent = '';
     root.appendChild(el('p', 'eyebrow', 'Ihr Ergebnis'));
     root.appendChild(el('h1', null, right + ' von ' + Q.length + ' richtig.'));
-    root.appendChild(el('p', 'lead', 'Im echten Test sind es 30 Fragen. Bestanden ist ab 90 % – und nur ohne Fehler bei kritischen Fragen. Sie sehen im Kabinett, wer bestanden hat.'));
+    root.appendChild(el('p', 'lead', 'Im echten Test sind es 30 Fragen. Die Bestehensgrenze legen Sie selbst fest, bis 100 % – und bestanden ist nur ohne Fehler bei kritischen Fragen. Sie sehen im Kabinett, wer bestanden hat.'));
     var c = el('div', 'cta');
     var a = el('a', 'btn', 'Demo anfragen'); a.href = 'index.html#kontakt'; c.appendChild(a);
     var r = el('button', 'btn ghost', 'Noch einmal'); r.type = 'button'; r.onclick = function () { i = -1; right = 0; next(); }; c.appendChild(r);
